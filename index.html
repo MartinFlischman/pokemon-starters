@@ -6,45 +6,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-    <title>Pokémon | Starter Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Pokémon</title>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-dark">
-    <div class="container">
-        <!--Header-->
-        <header class="d-flex justify-content-center py-5">
-            <img src="./images/logo.svg" alt="pokemon logo">
-        </header>
+<body>
+    <!--Header-->
+    <header class="bg-dark d-flex justify-content-center pt-5 pb-2">
+        <a href="https://pokemondb.net/pokedex/all" target="_blank"><img src="./images/logo.svg" alt="pokemon logo"></a>
+    </header>
 
-        <!--Info Section-->
-        <section class="bg-light text-dark text-center p-5 rounded">
-            <div class="container-fluid">
-                <h1 class="fw-semibold pb-3">What are Pokémon?</h1>
-                <p class="fs-5 pb-2">Pokémon are “monsters” that have special powers and share the world with humans.
-                    There
-                    are different
-                    types or categories
-                    of Pokémon: Bug, Fighting, Fire, Flying, Dragon, Electric, Ghost, Grass, Ground, Ice, Normal,
-                    Poison, Psychic, Rock, and
-                    Water. Within each type are several different Pokémon, each possessing various abilities.</p>
-                <p class="fs-5">
-                    They can evolve and pass through various levels, 100 being the highest. There are also special
-                    stones (Fire, Leaf, Moon,
-                    Thunder, and Water) that can be used to force some Pokémon to evolve into more powerful creatures.
-                    Of course, after
-                    normal development in skill learning, various Pokémon often evolve on their own.
-                </p>
+    <!--Info Section-->
+    <section class="bg-dark text-light text-center p-5">
+        <div class="container-fluid">
+            <h1 class="fw-semibold pb-3">What are Pokémon?</h1>
+            <p class="text-secondary fs-5 pb-2">Pokémon are “monsters” that have special powers and share the world
+                with humans. <br> There are different types or categories of Pokémon: Bug, Fighting, Fire, Flying,
+                Dragon,
+                Electric, Ghost, Grass, Ground, Ice, Normal, Poison, Psychic, Rock, and Water. Within each type are
+                several different Pokémon, each possessing various abilities.</p>
+            <a class="text-warning fw-lighter" href="https://en.wikipedia.org/wiki/Pok%C3%A9mon" target="_blank">Read
+                More <i class="bi bi-chevron-compact-right"></i></a>
+        </div>
+    </section>
+
+    <!--Main-->
+    <main class="bg-darky text-dark text-center p-5">
+        <div class="container-fluid pb-4">
+            <h1 class="fw-semibold pb-3">Starter Pokémon</h1>
+            <p class="text-secondary fs-5">
+                Starter Pokémon, or Starters, are the Pokémon a Trainer chooses at the beginning of their Pokémon
+                journey and the main
+                protagonists of the Pokémon series of games. In each generation of Pokémon games, a set of Starter
+                Pokémon are available
+                for new Trainers to choose from in sets of three; the types that make up these sets are Fire, Grass,
+                and Water. Each
+                starter Pokémon has three evolutionary forms.
+            </p>
+        </div>
+
+        <div class="container-fluid d-flex justify-content-around">
+            <div class="row pb-4">
+                <!--Bulbasaur-->
+                <div class="col-md pb-">
+                    <div class="card" style="width: 22rem;">
+                        <img src="./images/bulbasaur.png" class="card-img-top bg-light" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Bulbasaur #0001</h5>
+                            <p class="card-text text-success fw-medium">
+                                Type: Grass / Poison <i class="bi bi-flower3"></i>
+                            </p>
+                            <p class="card-text text-secondary">
+                                There is a plant seed on its back right from the day this Pokémon is born. The seed
+                                slowly grows larger.
+                            </p>
+                            <a href="https://pokemondb.net/pokedex/bulbasaur" target="_blank"
+                                class="btn btn-success">More info <i class="bi bi-chevron-compact-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Charmander-->
+                <div class="col-md">
+                    <div class="card" style="width: 22rem;">
+                        <img src="./images/charmander.png" class="card-img-top bg-light" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Charmander #0004</h5>
+                            <p class="card-text text-danger fw-medium">
+                                Type: Fire <i class="bi bi-fire"></i>
+                            </p>
+                            <p class="card-text text-secondary">It has a preference for hot things. When it
+                                rains,
+                                steam is said to
+                                spout
+                                from the tip of its tail.</p>
+                            <a href="https://pokemondb.net/pokedex/charmander" target="_blank"
+                                class="btn btn-danger">More info <i class="bi bi-chevron-compact-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Squirtle-->
+                <div class="col-md">
+                    <div class="card" style="width: 22rem;">
+                        <img src="./images/squirtle.png" class="card-img-top bg-light" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Squirtle #0007</h5>
+                            <p class="card-text text-primary fw-medium">
+                                Type: Water <i class="bi bi-droplet-fill"></i>
+                            </p>
+                            <p class="card-text text-secondary">When it retracts its long neck into its shell,
+                                it
+                                squirts out water
+                                with
+                                vigorous force.</p>
+                            <a href="https://pokemondb.net/pokedex/squirtle" target="_blank"
+                                class="btn btn-primary">More info <i class="bi bi-chevron-compact-right"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+    </main>
 
-        <!--Main-->
+    <!--Footer-->
+    <footer class="p-4 bg-warning text-dark text-center position-relative">
+        <div class="container">
+            <p class="lead">
+                Created with <i class="bi bi-cup-hot-fill"></i> by <a class="text-dark"
+                    href="https://github.com/MartinFlischman" target="_blank">Martin
+                    Flischman</aclas>
+            </p>
 
-
-        <!--Footer-->
+            <a href="#" class="position-absolute bottom-0 end-0 p-4">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
     </div>
 </body>
 
